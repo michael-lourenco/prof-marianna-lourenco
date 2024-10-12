@@ -62,7 +62,7 @@ const Contact = ({ data, socialData }) => {
                 </div>
                 <div className="st-single-info-details">
                   <h4>Endereço</h4>
-                  <span>Av. Brigadeiro Lima e Silva, 734 / AP. 403 Bloco B <br/> Pq. Duque Duque de Caxias - RJ, 25085-132</span>
+                  <span>Rio de Janeiro/span>
                 </div>
               </div>
               <div className="st-social-info">
