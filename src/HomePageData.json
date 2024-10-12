@@ -1,0 +1,351 @@
+{
+  "heroData": {
+    "bgImgLink": "/images/background/hero-bg.jpg",
+    "imgLink": "/images/section/hero-img.jpg",
+    "title": "Marianna <br /> Lourenço",
+    "subTitle": "Olá, sou a",
+    "designation": "Influencer de professores"
+  },
+  "aboutData": {
+    "imgLink": "/images/section/about.jpg",
+    "cvPdf": "/images/Resume.pdf",
+    "title": "Olá! Eu sou Marianna Lourenço",
+    "subtitle": "Influencer de professores",
+    "text": "Iluminar os professores. Sou professora e palestrante empenhada em ser relevante ao enaltecer o protagonismo dos professores e ir além de simplesmente reconhecer seu trabalho árduo.",
+    "details": [
+      {
+        "title": "Telefone",
+        "info": "+55 21 96436 2490"
+      },
+      {
+        "title": "Email",
+        "info": "profmariannalourenco@gmail.com.br"
+      },
+      {
+        "title": "From",
+        "info": "Av. Brigadeiro Lima e Silva, 734 / AP 403 Bloco B - Pq. Duque - Duque de Caxias - RJ, 25085-132"
+      },
+      {
+        "title": "Línguas",
+        "info": "Português, Inglês"
+      },
+      {
+        "title": "Palestrante",
+        "info": "Disponível"
+      }
+    ]
+  },
+  "serviceData": {
+    "services": [
+      {
+        "imgLink": "/images/icon/icon1.png",
+        "title": "A nova geração de professores",
+        "text": "Geralmente, quando ouvimos o termo “a nova geração”, ele vem associado aos jovens, aos alunos.",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
+        "imgLink": "/images/icon/icon2.png",
+        "title": "Abrindo horizontes: Conquistando sonhos através do intercâmbio",
+        "text": "Conquistando sonhos através do intercâmbio",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "300"
+      },
+      {
+        "imgLink": "/images/icon/icon2.png",
+        "title": "Abrindo horizontes: Conquistando sonhos através do intercâmbio",
+        "text": "Conquistando sonhos através do intercâmbio",
+        "effect": "zoom-out-up",
+        "duration": "500",
+        "delay": "300"
+      }
+    ]
+  },
+  "skillData": {
+    "title": "All the skills that I have in that field of work are mentioned.",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
+    "skills": [
+      {
+        "title": "Photoshop",
+        "progress": "95%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
+        "title": "Motion Graphic",
+        "progress": "75%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "300"
+      },
+      {
+        "title": "Adobe XD",
+        "progress": "90%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "400"
+      },
+      {
+        "title": "UX Design",
+        "progress": "85%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "500"
+      },
+      {
+        "title": "HTML",
+        "progress": "80%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "600"
+      },
+      {
+        "title": "Digital Marketing",
+        "progress": "90%",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "700"
+      }
+    ]
+  },
+  "portfolioData": {
+    "portfolioItems": [
+      {
+        "imgLink": "/images/portfolio/portfolio1.jpg",
+        "imgLinkLg": "/images/portfolio/portfolio1_lg.jpg",
+        "title": "Educação para a empatia",
+        "subTitle": "Cultivando empatia",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "200"
+      },
+      {
+        "imgLink": "/images/portfolio/portfolio2.jpg",
+        "imgLinkLg": "/images/portfolio/portfolio2_lg.jpg",
+        "title": "Educação para a empatia",
+        "subTitle": "Cultivando empatia 2",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "300"
+      },
+      {
+        "imgLink": "/images/portfolio/portfolio3.jpg",
+        "imgLinkLg": "/images/portfolio/portfolio3_lg.jpg",
+        "title": "Educação para a empatia",
+        "subTitle": "Cultivando empatia 3",
+        "effect": "fade-up",
+        "duration": "500",
+        "delay": "400"
+      }
+    ]
+  },
+  "blogData": {
+    "useFor": "blog",
+    "sliderSetting": {
+      "infinite": true,
+      "speed": 500,
+      "slidesToShow": 3,
+      "slidesToScroll": 1,
+      "arrows": false,
+      "responsive": [
+        {
+          "breakpoint": 991,
+          "settings": {
+            "slidesToShow": 2,
+            "autoplay": true
+          }
+        },
+        {
+          "breakpoint": 767,
+          "settings": {
+            "slidesToShow": 1,
+            "autoplay": true
+          }
+        }
+      ]
+    },
+    "informations": [
+      {
+        "imgLink": "/images/blog/blog1.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "/images/blog/blog2.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "What are the latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "/images/blog/blog3.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "Trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "/images/blog/blog1.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "What are the latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "/images/blog/blog2.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "The latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      },
+      {
+        "imgLink": "/images/blog/blog3.jpg",
+        "designation": "Admin",
+        "date": "07-03-2023",
+        "title": "What are the latest trends in Graphic design according to you?",
+        "href": "/blog/blog-details"
+      }
+    ]
+  },
+  "reviewData": {
+    "useFor": "review",
+    "sliderSetting": {
+      "infinite": true,
+      "speed": 500,
+      "slidesToShow": 3,
+      "slidesToScroll": 1,
+      "arrows": false,
+      "responsive": [
+        {
+          "breakpoint": 991,
+          "settings": {
+            "slidesToShow": 2,
+            "autoplay": true
+          }
+        },
+        {
+          "breakpoint": 767,
+          "settings": {
+            "slidesToShow": 1,
+            "autoplay": true
+          }
+        }
+      ]
+    },
+    "informations": [
+      {
+        "imgLink": "/images/client/client1.png",
+        "title": "Renata Gomes",
+        "designation": "Diretora",
+        "text": "Participar das palestras da Professora Marianna foi uma experiência transformadora. Ela não apenas valoriza o papel dos educadores, mas também nos inspira a enxergar nossa profissão com um olhar renovado. Sua abordagem é acolhedora, profunda e cheia de paixão pela educação."
+      },
+      {
+        "imgLink": "/images/client/client2.png",
+        "title": "Valéria Lima",
+        "designation": "Corrdenadora",
+        "text": "A Professora Marianna trouxe à tona o melhor em mim como educadora. Suas palestras são verdadeiras jornadas de reflexão e motivação, que nos fazem lembrar da importância do nosso trabalho e do impacto que podemos causar na vida dos alunos. Ela nos ilumina com sua sabedoria e energia."
+      },
+      {
+        "imgLink": "/images/client/client3.png",
+        "title": "Jairo Gusmão",
+        "designation": "Professor",
+        "text": "Marianna tem uma maneira singular de conectar as experiências dos professores com a importância social da educação. Suas palavras nos fazem sentir protagonistas da mudança, reconhecendo nossos desafios, mas principalmente nossas vitórias. Suas palestras são um sopro de renovação e entusiasmo."
+      },
+      {
+        "imgLink": "/images/client/client1.png",
+        "title": "Richard Cavalcante",
+        "designation": "Professor",
+        "text": "As palestras da Professora Marianna são verdadeiros momentos de inspiração. Ela nos faz enxergar o valor de nosso trabalho como educadores e nos motiva a continuar fazendo a diferença. Sua energia e dedicação contagiam a todos"
+      },
+      {
+        "imgLink": "/images/client/client2.png",
+        "title": "Ana Louise",
+        "designation": "Professora",
+        "text": "Marianna tem o dom de nos lembrar do poder transformador da educação. Em cada palestra, ela nos oferece uma nova perspectiva sobre nossa importância como professores e nos encoraja a seguir inspirando e moldando o futuro. É impossível sair sem se sentir renovado."
+      },
+      {
+        "imgLink": "/images/client/client3.png",
+        "title": "Jose Alvares",
+        "designation": "Diretor",
+        "text": "A Professora Marianna é uma referência no que diz respeito à valorização dos educadores. Suas palestras nos tocam profundamente, destacando nossa relevância na sociedade e reforçando a importância de cada pequena conquista. Uma experiência enriquecedora e motivadora."
+      }
+    ]
+  },
+  "resumeData": {
+    "experienceTitle": "Experiências",
+    "experience": [
+      {
+        "title": "Senior UX/UI Designer",
+        "duration": "Jan 2020 - Present",
+        "subTitle": "Bergnaum, Hills and Howe",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
+      },
+      {
+        "title": "Product Designer",
+        "duration": "Jan 2016 - December 2019",
+        "subTitle": "Langosh, Sipes and Raynor",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
+      },
+      {
+        "title": "UI/UX Designer",
+        "duration": "Jan 2014 - December 2015",
+        "subTitle": "Strosin, Maggio and Homenick",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
+      }
+    ],
+    "educationTitle": "Educação",
+    "education": [
+      {
+        "title": "Master of Computer Science",
+        "duration": "2015 - 2016",
+        "subTitle": "University of XYZ",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
+      },
+      {
+        "title": "Bachelor of Computer Science",
+        "duration": "2010 - 2014",
+        "subTitle": "University of ABC",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
+      },
+      {
+        "title": "Diploma in Computer Science",
+        "duration": "2006 - 2010",
+        "subTitle": "XYZ Institution",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula nulla, tincidunt id faucibus sed, suscipit feugiat turpis."
+      }
+    ]
+  },
+  "contactData": {
+    "formTitle": "Diga um Olá",
+    "title": "Informações de Contato",
+    "subTitle": "Visite meu perfil social e conecte-se",
+    "text": ""
+  },
+  "socialData": [
+    {
+      "icon": "instagram",
+      "title": "Instagram",
+      "link": "/"
+    },
+    {
+      "icon": "facebook",
+      "title": "Facebook",
+      "link": "/"
+    },
+    {
+      "icon": "twitter",
+      "title": "Twitter",
+      "link": "/"
+    },
+    {
+      "icon": "linkedin",
+      "title": "LinkedIn",
+      "link": "/"
+    }
+  ]
+}
