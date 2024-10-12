@@ -62,7 +62,7 @@ const Contact = ({ data, socialData }) => {
                 </div>
                 <div className="st-single-info-details">
                   <h4>Endereço</h4>
-                  <span>Rio de Janeiro/span>
+                  <span>Rio de Janeiro</span>
                 </div>
               </div>
               <div className="st-social-info">
