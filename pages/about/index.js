@@ -25,18 +25,19 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          { id: 'html5', component: <FaHtml5 /> },
+          { id: 'css3', component: <FaCss3 /> },
+          { id: 'js', component: <FaJs /> },
+          { id: 'react', component: <FaReact /> },
+          { id: 'nextjs', component: <SiNextdotjs /> },
+          { id: 'framer', component: <SiFramer /> },
+          { id: 'wordpress', component: <FaWordpress /> },
         ],
+        
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma key={'figma'}/>, <SiAdobexd key={'xd'}/>, <SiAdobephotoshop key={'photoshop'} />],
       },
     ],
   },
@@ -126,7 +127,7 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Captivating <span className='text-accent'>stories</span> birth
+            Captivating <span className="text-accent">stories</span> birth
             magnificent designs.
           </motion.h2>
           <motion.p
@@ -136,7 +137,7 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
+            10 years ago, I began freelancing as a developer. Since then, I&apos;ve
             done remote work for agencies, counsulted for startups, and
             collaborated on digital products for business and consumer use.
           </motion.p>
@@ -197,20 +198,19 @@ const About = () => {
           className='flex flex-col w-full xl:max-w-[48%] h-[480px]'
         >
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
-            {aboutData.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className={`${
-                    index === itemIndex &&
-                    'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
-                  }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}
-                >
-                  {item.title}
-                </div>
-              );
-            })}
+          {aboutData.map((item, itemIndex) => (
+            <div
+              key={item.title} // ou `key={itemIndex}`, mas o título é melhor se for único
+              className={`${
+                index === itemIndex &&
+                'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+              }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+              onClick={() => setIndex(itemIndex)}
+            >
+              {item.title}
+            </div>
+          ))}
+
           </div>
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
             {aboutData[index].info.map((item, itemIndex) => {
@@ -225,9 +225,13 @@ const About = () => {
                   <div>{item.stage}</div>
                   <div className='flex gap-x-4'>
                     {/* icons */}
-                    {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white'>{icon}</div>;
-                    })}
+                    {item.icons?.map((icon, iconIndex) => (
+                      <div key={icon.id || iconIndex} className='text-2xl text-white'>
+                        {icon.component || icon}
+                      </div>
+                    ))}
+
+
                   </div>
                 </div>
               );
