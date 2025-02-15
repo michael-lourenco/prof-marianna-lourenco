@@ -4,25 +4,24 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Contact() {
   return (
-    <div className="flex flex-col items-center bg-[#FAF7F5] space-y-6 p-6 pt-0">
+    <div className="flex flex-col items-center">
       {/* Card da Imagem */}
-      <Card className="w-full max-w-md">
-        <CardContent className="flex justify-center p-4 pt-0">
-          <div className="w-full h-64 flex items-center justify-center">
+      <Card className="w-full border-none rounded-none shadow-none bg-none p-0 m-0">
+        <CardContent className="flex justify-center p-0">
+          <div className="w-full flex items-center justify-center">
             {/* Substitua essa div pela sua imagem */}
             <Image 
-            src="/images/contact.png" // Replace with your image path
-            width={250}
-            height={250}
+            src="/images/call-to-action.png" // Replace with your image path
+            width={1920}
+            height={1080}
             alt="Speaker presenting"
-            className="rounded-lg object-cover"
             />
           </div>
         </CardContent>
       </Card>
 
       {/* Card de Contato */}
-      <Card className="w-full max-w-md">
+      {/* <Card className="w-full">
         <CardContent className="p-6 space-y-4">
           <div className="flex items-center space-x-4">
             <Phone className="w-6 h-6 text-gray-600" />
@@ -41,7 +40,7 @@ export default function Contact() {
             <span>@profmariaNNalourenco</span>
           </div>
         </CardContent>
-      </Card>
+      </Card> */}
     </div>
   );
 }

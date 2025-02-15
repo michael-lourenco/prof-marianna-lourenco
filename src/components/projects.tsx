@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Projects() {
     return (
-      <div className="min-h-screen bg-[#FAF7F5] p-8">
+      <div className="min-h-screen p-8">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {/* Left Column */}
@@ -23,8 +23,6 @@ export default function Projects() {
                 <h1> PROJETOS <br/> REALIZADOS <br/> COM: </h1>
               </div>
   
-              {/* Instagram handle */}
-              <div className="text-[#8B5E34]">@profmariannalourenco</div>
             </div>
   
             {/* Right Column */}
@@ -37,11 +35,6 @@ export default function Projects() {
                 height={800}
                 alt="Speaker presenting"
                 />
-              </div>
-              {/* Speaker name */}
-              <div className="mt-auto">
-                <span className="font-serif text-xl text-[#8B5E34]">MARIANNA</span>
-                <span className="font-serif text-xl font-light text-[#8B5E34]">LOURENÇO</span>
               </div>
             </div>
           </div>
