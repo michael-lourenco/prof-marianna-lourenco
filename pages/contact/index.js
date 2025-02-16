@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='h-full bg-primary/30'>
+    <div className='bg-primary/30 lg:h-full'>
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         <div className='flex flex-col w-full max-w-[700px]'>
           <motion.h2
@@ -42,7 +42,7 @@ const Contact = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h2 text-center mb-12'
+            className='h2 text-center mb-8'
           >
             Vamos nos <span className='text-accent'>conectar.</span>
           </motion.h2>
