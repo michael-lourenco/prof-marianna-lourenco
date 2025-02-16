@@ -9,21 +9,25 @@ import {
   RiDribbbleLine,
   RiBehanceLine,
   RiPinterestLine,
+  RiWhatsappLine,
 } from 'react-icons/ri';
 
 const Socials = () => {
   return (
     <div className='flex items-center gap-x-5 text-lg'>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
+      <Link href={'https://www.youtube.com/@profmariaNNalourenco'} className='hover:text-accent transition-all duration-300'>
         <RiYoutubeLine />
       </Link>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
-        <RiFacebookLine />
+        <RiWhatsappLine />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
+      {/* <Link href={''} className='hover:text-accent transition-all duration-300'>
+        <RiFacebookLine />
+      </Link> */}
+      <Link href={'https://www.instagram.com/profmariannalourenco/'} className='hover:text-accent transition-all duration-300'>
         <RiInstagramLine />
       </Link>
-      <Link href={''} className='hover:text-accent transition-all duration-300'>
+      {/* <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiDribbbleLine />
       </Link>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
@@ -31,7 +35,7 @@ const Socials = () => {
       </Link>
       <Link href={''} className='hover:text-accent transition-all duration-300'>
         <RiPinterestLine />
-      </Link>
+      </Link> */}
     </div>
   );
 };

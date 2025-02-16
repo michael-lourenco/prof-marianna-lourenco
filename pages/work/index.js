@@ -22,7 +22,7 @@ const Work = () => {
               exit='hidden'
               className='h2 xl:mt-12'
             >
-              My work <span className='text-accent'>.</span>
+              Projetos <span className='text-accent'>.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
@@ -31,8 +31,7 @@ const Work = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-              eveniet dignissimos distinctio tempore harum laudantium.
+              Iniciativas que inspiram e capacitam educadores, oferecendo estratégias práticas e transformadoras para enriquecer suas práticas pedagógicas e promover o bem-estar.
             </motion.p>
           </div>
 

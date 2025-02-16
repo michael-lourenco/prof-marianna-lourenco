@@ -22,29 +22,50 @@ import { FreeMode, Pagination } from 'swiper';
 // service data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxPencil2 />,
+    title: 'A nova geração de professores',
+    description: 'O professor no Século XXI',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: `“O professor é o que há de mais
+tecnológico na educação”:`,
+    description: '',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxPencil2 />,
+    title: 'Brilhe e Ilumine',
+    description: 'escolha brilhar e ilumine o mundo ao seu redor ao se abraçar',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxPencil2 />,
+    title: 'Desenvolvimento Pessoal',
+    description: 'Superando o medo de não ser “perfeito”',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <RxPencil2 />,
+    title: 'Errar não é falhar',
+    description: 'Resiliência, Empatia eHumanização',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'Confiança na Prática',
+    description: 'reaprenda-se com Segurança, Autoridade e Propósito',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'A Revolucione-se',
+    description: 'Rupturas e Renovação',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'Abrindo horizontes',
+    description: 'Conquistando Sonhos Através do Intercâmbio',
+  },
+  {
+    icon: <RxPencil2 />,
+    title: 'Empowering English Teachers',
+    description: 'Building Confidence and Resilience',
   },
 ];
 
