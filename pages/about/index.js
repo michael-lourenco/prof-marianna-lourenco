@@ -105,7 +105,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className='bg-[#bd6905] py-32 text-center xl:text-left lg:h-full'>
+    <div className='py-32 text-center xl:text-left lg:h-full'>
       <Circles />
       {/* avatar img */}
       <motion.div
