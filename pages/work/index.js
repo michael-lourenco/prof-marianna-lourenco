@@ -22,7 +22,7 @@ const Work = () => {
               exit='hidden'
               className='h2 xl:mt-12'
             >
-              Projetos <span className='text-accent'>.</span>
+              PROJETOS
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
