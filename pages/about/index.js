@@ -105,7 +105,7 @@ const About = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <div className="py-32 text-center xl:text-left">
+    <div className="text-center xl:text-left">
       <Circles />
       <motion.div
         variants={fadeIn("right", 0.2)}
