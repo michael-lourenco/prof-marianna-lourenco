@@ -12,12 +12,12 @@ const sora = Sora({
 const Layout = ({ children }) => {
   return (
     <div
-      className={`page bg-[#303843] text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative min-h-screen`}
+      className={`page bg-[#303843] text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative min-h-screen overflow-y-auto`}
     >
       <TopLeftImg />
       <Nav />
       <Header />
-      <main className="h-full overflow-y-auto md:overflow-y-hidden">{children}</main>
+      <main className="h-full">{children}</main>
     </div>
   )
 }
