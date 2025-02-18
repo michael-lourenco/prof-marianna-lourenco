@@ -44,7 +44,7 @@ const Contact = () => {
             exit='hidden'
             className='h2 text-center mb-8'
           >
-            Vamos nos <span className='text-accent'>conectar.</span>
+            VAMOS <span className='text-accent'>IMPACTAR</span> A EDUCAÇÃO JUNTOS?
           </motion.h2>
           
           <motion.form

@@ -20,7 +20,7 @@ import {
 //  about data
 export const aboutData = [
   {
-    title: 'skills',
+    title: 'parceiros',
     info: [
       {
         title: 'Web Development',
@@ -127,7 +127,7 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Inspirando <span className="text-accent">Educadores</span> para Transformação Humana.
+            INSPIRANDO <span className="text-accent">EDUCADORES</span> PARA TRANSFORMAÇÃO HUMANA.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
