@@ -107,7 +107,7 @@ const About = () => {
   return (
     <div className='bg-primary/30 flex items-center lg:h-full'>
       <Circles />
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -115,9 +115,9 @@ const About = () => {
         className="hidden xl:flex absolute bottom-0 -left-[420px] z-0"
       >
         <Avatar width={400} height={400} />
-      </motion.div>
+      </motion.div> */}
       <div className="container mx-auto flex flex-col items-center xl:flex-row gap-x-6 z-10">
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="flex-1 flex flex-col justify-center text-center lg:text-left">
           <motion.h2 variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2">
             INSPIRANDO <span className="text-accent">EDUCADORES</span>
           </motion.h2>
