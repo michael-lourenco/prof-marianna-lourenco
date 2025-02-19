@@ -105,21 +105,21 @@ const About = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <div className="text-center xl:text-left">
+    <div className='bg-primary/30 flex items-center lg:h-full'>
       <Circles />
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[420px] z-0"
       >
-        <Avatar />
+        <Avatar width={400} height={400} />
       </motion.div>
-      <div className="container mx-auto flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto flex flex-col items-center xl:flex-row gap-x-6 z-10">
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2">
-            INSPIRANDO <span className="text-accent">EDUCADORES</span> PARA TRANSFORMAÇÃO HUMANA.
+            INSPIRANDO <span className="text-accent">EDUCADORES</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
@@ -129,10 +129,7 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             Profissional apaixonada por educação, palestrante, mentora e professora com vasta experiência. Minha missão
-            é inspirar educadores e instituições, promovendo equilíbrio e confiança. Graduada em Letras pela PUC-Rio,
-            pós em Ensino de Inglês pela UNESA, e professora da SMERJ. Em 2019, conquistei bolsa para o PDPI (EUA), e
-            desde então, faço parte da rede Alumni, coordenei o Chapter da USBEARJ e atuei como mentora em programas da
-            Embaixada dos EUA, sempre fortalecendo a prática docente.
+            é inspirar educadores e instituições, promovendo equilíbrio e confiança. 
           </motion.p>
         </div>
         <motion.div
