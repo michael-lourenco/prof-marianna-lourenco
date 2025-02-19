@@ -1,5 +1,6 @@
 // import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 // import swiper styles
 import 'swiper/css';
@@ -95,7 +96,15 @@ const ServiceSlider = () => {
           <SwiperSlide key={index}>
             <div className='bg-[#bd6905] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#272f3a] transition-all duration-300'>
               {/* icon */}
-              <div className='text-4xl text-accent mb-4'>{item.icon}</div>
+              <div className='text-4xl text-accent mb-4'>
+                <Image
+                  src={'/icon_topic.png'}
+                  width={40}
+                  height={40}
+                  alt=''
+                  className=''
+                />
+              </div>
               {/* title & desc */}
               <div className='mb-8'>
                 <div className='mb-2 text-lg'>{item.title}</div>
