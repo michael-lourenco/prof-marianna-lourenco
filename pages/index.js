@@ -19,19 +19,20 @@ const Home = () => {
       <div className='w-full h-full'>
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
           {/* title */}
+          
           <motion.div
             variants={fadeIn('down', 0.2)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className=''
+            className='mx-auto md:mx-0 w-[200px] h-[112px] md:w-[350px] md:h-[196px]'
           >
             <Image
               src={'/marianna_titulo_2_trim.png'}
-              width={350}
+              width={350} 
               height={196}
               alt='Marianna Lourenço'
-              className=''
+              className='w-full h-full'
               priority
             />
           </motion.div>
@@ -65,7 +66,7 @@ const Home = () => {
         {/* bg img */}
         {/* <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'></div> */}
         {/* particles */}
-        {/* <ParticlesContainer /> */}
+        <ParticlesContainer />
         {/* avatar img */}
         <motion.div
           variants={fadeIn('up', 0.5)}
