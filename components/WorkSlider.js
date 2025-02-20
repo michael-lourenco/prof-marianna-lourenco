@@ -4,7 +4,7 @@ export const workSlider = {
     {
       images: [
         {
-          title: 'title',
+          title: 'Projeto 1',
           path: '/thumb1.jpg',
         },
         {
@@ -44,16 +44,26 @@ export const workSlider = {
   ],
 };
 
+
+import { useState } from "react"
 // import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogTitle,
+  DialogDescription,
+} from "../components/ui/dialog"
+import { Button } from "../components/ui/button"
 // import swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination } from 'swiper';
+import { FreeMode, Pagination } from 'swiper';
 
 // icons
 import { BsArrowRight } from 'react-icons/bs';
@@ -61,7 +71,22 @@ import { BsArrowRight } from 'react-icons/bs';
 import Image from 'next/image';
 
 const WorkSlider = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedItem, setSelectedItem] = useState(null)
+
+  const openModal = (item) => {
+    console.log('ITEM' , item)
+    setSelectedItem(item)
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+    setSelectedItem(null)
+  }
+
   return (
+    <>
     <Swiper
       spaceBetween={10}
       pagination={{
@@ -79,6 +104,7 @@ const WorkSlider = () => {
                   <div
                     className='relative rounded-lg overflow-hidden flex items-center justify-center group'
                     key={index}
+                    onClick={() => openModal(image)}
                   >
                     <div className='flex items-center justify-center relative overflow-hidden group'>
                       {/* image */}
@@ -109,7 +135,22 @@ const WorkSlider = () => {
         );
       })}
     </Swiper>
-  );
+      <Dialog open={isModalOpen} onOpenChange={closeModal} className="z-index-1000">
+      <DialogContent className="sm:max-w-[425px] z-index-1000">
+        <DialogHeader>
+          <DialogTitle>{selectedItem?.title }</DialogTitle>
+          <DialogDescription className="text-justify text-[#e0e0e0]">{`teste`}</DialogDescription>
+        </DialogHeader>
+        <DialogFooter>
+          {/* <Button onClick={closeModal}>
+            <RxCross2 className="mr-2 h-4 w-4" /> Close
+          </Button> */}
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+    </>
+
+);
 };
 
 export default WorkSlider;

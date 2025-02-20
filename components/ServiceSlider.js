@@ -149,7 +149,7 @@ const ServiceSlider = () => {
         <DialogContent className="sm:max-w-[425px] z-index-1000">
           <DialogHeader>
             <DialogTitle>{selectedItem?.fullTitle}</DialogTitle>
-            <DialogDescription>{selectedItem?.resume}</DialogDescription>
+            <DialogDescription className="text-justify text-[#e0e0e0]">{selectedItem?.resume}</DialogDescription>
           </DialogHeader>
           <DialogFooter>
             {/* <Button onClick={closeModal}>
