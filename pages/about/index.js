@@ -1,111 +1,74 @@
-import React, { useState } from 'react';
+"use client"
 
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from 'react-icons/fa';
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from 'react-icons/si';
+import { useState } from "react"
 
 //  about data
 export const aboutData = [
   {
-    title: 'parceiros',
+    title: "parceiros",
+    info: [
+      { id: "parceiro1", img: "/avatar.png", url: "https://google.com" },
+      { id: "parceiro2", img: "/avatar.png", url: "https://google.com" },
+      { id: "parceiro3", img: "/avatar.png", url: "https://google.com" },
+      { id: "parceiro4", img: "/avatar.png", url: "https://google.com" },
+    ],
+  },
+  {
+    title: "credenciais",
     info: [
       {
-        title: 'Web Development',
-        icons: [
-          { id: 'html5', component: <FaHtml5 /> },
-          { id: 'css3', component: <FaCss3 /> },
-          { id: 'js', component: <FaJs /> },
-          { id: 'react', component: <FaReact /> },
-          { id: 'nextjs', component: <SiNextdotjs /> },
-          { id: 'framer', component: <SiFramer /> },
-          { id: 'wordpress', component: <FaWordpress /> },
-        ],
-        
+        title: "Graduada em Letras pela PUC-Rio",
+        stage: "",
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma key={'figma'}/>, <SiAdobexd key={'xd'}/>, <SiAdobephotoshop key={'photoshop'} />],
+        title: "Pós-graduada em Ensino da Língua Inglesa pela UNESA",
+        stage: "",
+      },
+      {
+        title: "Professora Concursada da SMERJ",
+        stage: "",
       },
     ],
   },
   {
-    title: 'awards',
+    title: "conquistas",
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: "Bolsa para o PDPI-2019",
+        stage: "",
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: "Faz parte da rede Alumni dos EUA",
+        stage: "",
+      },
+      {
+        title: "Coordenei o Chapter da USBEARJ,",
+        stage: "",
+      },
+      {
+        title: "Atua como mentora/tutora em alguns programas oferecidos pela Embaixada dos EUA como o ACCESS FOR TEACHERS VIEWING PARTIES.",
+        stage: "",
+      },
+      {
+        title: "Nos últimos 2 anos palestrou no PDO do PDPI para que os participantes pudessem otimizar a sua participação no programa",
+        stage: "",
       },
     ],
   },
-  {
-    title: 'experience',
-    info: [
-      {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
-      },
-      {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
-    ],
-  },
-];
-
-// components
-import Avatar from '../../components/Avatar';
-import Circles from '../../components/Circles';
+]
+import Circles from "../../components/Circles"
+import Image from "next/image"
+import Link from "next/link"
 
 // framer motion
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants';
-
-// counter
-import CountUp from 'react-countup';
+import { motion } from "framer-motion"
+import { fadeIn } from "../../variants"
 
 const About = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <div className='bg-primary/30 flex items-center lg:h-full'>
+    <div className="bg-primary/30 flex items-center lg:h-full">
       <Circles />
       {/* <motion.div
         variants={fadeIn("right", 0.2)}
@@ -129,7 +92,7 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             Profissional apaixonada por educação, palestrante, mentora e professora com vasta experiência. Minha missão
-            é inspirar educadores e instituições, promovendo equilíbrio e confiança. 
+            é inspirar educadores e instituições, promovendo equilíbrio e confiança.
           </motion.p>
         </div>
         <motion.div
@@ -153,24 +116,33 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => (
-              <div
-                key={itemIndex}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-              >
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
-                <div className="flex gap-x-4">
-                  {item.icons?.map((icon, iconIndex) => (
-                    <div key={icon.id || iconIndex} className="text-2xl text-white">
-                      {icon.component || icon}
-                    </div>
-                  ))}
-                </div>
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-start xl:items-start">
+            {aboutData[index].title === "parceiros" ? (
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {aboutData[index].info.map((partner) => (
+                  <Link key={partner.id} href={partner.url} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      src={partner.img || "/placeholder.svg"}
+                      alt={`Partner ${partner.id}`}
+                      width={100}
+                      height={100}
+                      className="transition-transform hover:scale-105"
+                    />
+                  </Link>
+                ))}
               </div>
-            ))}
+            ) : (
+              aboutData[index].info.map((item, itemIndex) => (
+                <div
+                  key={itemIndex}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center  text-white/60"
+                >
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  {/* <div className="hidden md:flex">-</div> */}
+                  <div>{item.stage}</div>
+                </div>
+              ))
+            )}
           </div>
         </motion.div>
       </div>
@@ -179,3 +151,4 @@ const About = () => {
 }
 
 export default About
+
