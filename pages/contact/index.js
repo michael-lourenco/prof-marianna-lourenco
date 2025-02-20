@@ -7,7 +7,7 @@ import { fadeIn } from "../../variants"
 
 const Contact = () => {
   const mailtoLink =
-    "mailto:seu-email@exemplo.com?subject=Vamos%20Impactar%20a%20Educação%20Juntos&body=Olá,%0D%0A%0D%0AGostaria de saber mais sobre como podemos impactar a educação juntos.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu Nome]"
+    "mailto:profmariannalourenco@gmail.com?subject=Vamos%20Impactar%20a%20Educação%20Juntos&body=Olá,%0D%0A%0D%0AGostaria de saber mais sobre como podemos impactar a educação juntos.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu Nome]"
 
   return (
     <div className="bg-primary/30 text-center lg:h-full">
