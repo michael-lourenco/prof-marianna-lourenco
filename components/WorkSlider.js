@@ -139,7 +139,7 @@ const WorkSlider = () => {
       <DialogContent className="sm:max-w-[425px] z-index-1000">
         <DialogHeader>
           <DialogTitle>{selectedItem?.title }</DialogTitle>
-          <DialogDescription className="text-justify text-[#e0e0e0]">{`teste`}</DialogDescription>
+          <DialogDescription className="text-justify text-[#e0e0e0]"><Image src={selectedItem?.path} width={500} height={300} alt='' /></DialogDescription>
         </DialogHeader>
         <DialogFooter>
           {/* <Button onClick={closeModal}>
