@@ -25,12 +25,12 @@ const Home = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='mx-auto md:mx-0 w-[200px] h-[112px] md:w-[350px] md:h-[196px]'
+            className='mx-auto md:mx-0 w-[200px] h-[112px] md:w-[341px] md:h-[157px]'
           >
             <Image
-              src={'/marianna_titulo_2_trim.png'}
-              width={350} 
-              height={196}
+              src={'/marianna_titulo.png'}
+              width={341} 
+              height={157}
               alt='Marianna Lourenço'
               className='w-full h-full'
               priority
@@ -64,7 +64,8 @@ const Home = () => {
       {/* image */}
       <div className='w-[1200px] h-full absolute right-0 bottom-0'>
         {/* bg img */}
-        {/* <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'></div> */}
+        <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-no-repeat xl:w-[1080px] xl:h-[1080px] xl:bottom-0 xl:right-0 w-full h-full absolute mix-blend-color-dodge opacity-50'></div>
+
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}
