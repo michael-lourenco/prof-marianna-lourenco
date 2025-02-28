@@ -1,4 +1,5 @@
-// components
+// First file: Testimonials.jsx
+import React from 'react';
 import TestimonialSlider from '../../components/TestimonialSlider';
 
 // framer motion
@@ -26,6 +27,7 @@ const Testimonials = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
+            className="w-full"
           >
             <TestimonialSlider />
           </motion.div>
