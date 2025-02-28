@@ -6,8 +6,10 @@ import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"
 
 const Contact = () => {
-  const mailtoLink =
-    "mailto:profmariannalourenco@gmail.com?subject=Vamos%20Impactar%20a%20Educação%20Juntos&body=Olá,%0D%0A%0D%0AGostaria de saber mais sobre como podemos impactar a educação juntos.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu Nome]"
+  const phoneNumber = "5521964362490" // Replace with the actual phone number
+  const whatsappUrl = `https://wa.me/${phoneNumber}`
+  // const mailtoLink =
+  //   "mailto:profmariannalourenco@gmail.com?subject=Vamos%20Impactar%20a%20Educação%20Juntos&body=Olá,%0D%0A%0D%0AGostaria de saber mais sobre como podemos impactar a educação juntos.%0D%0A%0D%0AAtenciosamente,%0D%0A[Seu Nome]"
 
   return (
     <div className="bg-primary/30 text-center lg:h-full">
@@ -25,7 +27,9 @@ const Contact = () => {
 
           <motion.div variants={fadeIn("up", 0.4)} initial="hidden" animate="show" exit="hidden">
             <Link
-              href={mailtoLink}
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn rounded-full border border-white/50 px-8 py-3 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
             >
               <span className="transition-all duration-500 group-hover:-translate-y-[120%] group-hover:opacity-0">
