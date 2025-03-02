@@ -4,15 +4,15 @@ import { useState } from "react"
 
 //  about data
 export const aboutData = [
-  {
-    title: "parceiros",
-    info: [
-      { id: "parceiro1", img: "/avatar.png", url: "https://google.com" },
-      { id: "parceiro2", img: "/avatar.png", url: "https://google.com" },
-      { id: "parceiro3", img: "/avatar.png", url: "https://google.com" },
-      { id: "parceiro4", img: "/avatar.png", url: "https://google.com" },
-    ],
-  },
+  // {
+  //   title: "parceiros",
+  //   info: [
+  //     { id: "parceiro1", img: "/avatar.png", url: "https://google.com" },
+  //     { id: "parceiro2", img: "/avatar.png", url: "https://google.com" },
+  //     { id: "parceiro3", img: "/avatar.png", url: "https://google.com" },
+  //     { id: "parceiro4", img: "/avatar.png", url: "https://google.com" },
+  //   ],
+  // },
   {
     title: "credenciais",
     info: [
