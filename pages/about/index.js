@@ -80,8 +80,8 @@ const About = () => {
         <Avatar width={400} height={400} />
       </motion.div> */}
       <div className="container mx-auto flex flex-col items-center xl:flex-row gap-x-6 z-10">
-        <div className="flex-1 flex flex-col justify-center text-center lg:text-left">
-          <motion.h2 variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2">
+        <div className="flex-1 flex flex-col justify-center text-left lg:text-left">
+          <motion.h2 variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2 text-center">
             INSPIRANDO <span className="text-accent">EDUCADORES</span>
           </motion.h2>
           <motion.p
@@ -91,8 +91,34 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Profissional apaixonada por educação, palestrante, mentora e professora com vasta experiência. Minha missão
-            é inspirar educadores e instituições, promovendo equilíbrio e confiança.
+            <strong>Marianna Lourenço </strong> é professora, palestrante e mentora — uma voz potente quando o assunto é valorização docente, bem-estar e autoconhecimento na carreira educacional.
+          </motion.p>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+          >
+            Graduada em Letras pela PUC-Rio e pós-graduada em Ensino da Língua Inglesa, também atua como mentora em programas de formação de professores promovidos pela Embaixada dos Estados Unidos.
+        </motion.p>
+        <motion.p
+                    variants={fadeIn("right", 0.4)}
+                    initial="hidden"
+                    animate="show"
+                    exit="hidden"
+                    className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+                  >
+          Com uma trajetória sólida e sensível, Marianna se destaca como uma das principais referências no Brasil quando o tema é o cuidado com quem educa. Ela inspira professores a se priorizarem sem culpa, acreditando que o bem-estar do educador é o primeiro passo para qualquer transformação verdadeira na educação.
+        </motion.p>
+        <motion.p
+                    variants={fadeIn("right", 0.4)}
+                    initial="hidden"
+                    animate="show"                  
+                    exit="hidden"
+                    className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+                  >
+            Reconhecida por sua abordagem acolhedora e prática, conduz educadores no reencontro com a autoestima, a confiança e o propósito. Sua missão é clara: ajudar professores a se olharem com mais orgulho, carinho e verdade — e, assim, impactarem positivamente suas vidas, suas salas de aula e o futuro da educação.  
           </motion.p>
         </div>
         <motion.div
