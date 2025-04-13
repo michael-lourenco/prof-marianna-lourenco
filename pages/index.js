@@ -1,4 +1,3 @@
-// next image
 import Image from 'next/image';
 
 // components
@@ -14,12 +13,11 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
   return (
-    <div className='bg-primary/60 lg:h-full'>
+    <div className='bg-primary/60 lg:h-full relative'>
       {/* text */}
       <div className='w-full h-full'>
         <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
           {/* title */}
-          
           <motion.div
             variants={fadeIn('down', 0.2)}
             initial='hidden'
@@ -62,10 +60,7 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div className='w-[1200px] h-full absolute right-0 bottom-0'>
-        {/* bg img */}
-        {/* <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-no-repeat xl:w-[1080px] xl:h-[1080px] xl:bottom-0 xl:right-0 w-full h-full absolute mix-blend-color-dodge opacity-50'></div> */}
-
+      <div className='w-full lg:w-[1200px] h-full absolute right-0 bottom-0'>
         {/* particles */}
         <ParticlesContainer />
         {/* avatar img */}
@@ -75,7 +70,7 @@ const Home = () => {
           animate='show'
           exit='hidden'
           transition={{ duration: 1, ease: 'easeInOut' }}
-          className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'
+          className='w-full h-full max-w-[250px] max-h-[230px] lg:max-w-[737px] lg:max-h-[678px] absolute -bottom-10 right-1/2 transform translate-x-1/2 lg:-bottom-32 lg:right-[8%] lg:transform-none'
         >
           <Avatar width={737} height={678} />
         </motion.div>
