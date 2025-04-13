@@ -1,14 +1,13 @@
 import Image from 'next/image';
 
 const Avatar = ({ width, height }) => {
-  // 737 x 678
   return (
-    <div className="hidden xl:flex xl:max-w-none absolute bottom-0 right-5">
+    <div className="flex xl:max-w-none absolute bottom-0 right-0">
       <Image
         src={'/avatar.png'}
         width={width}
         height={height}
-        alt=""
+        alt="Foto de perfil"
         className="translate-z-0 w-full h-full"
       />
     </div>
